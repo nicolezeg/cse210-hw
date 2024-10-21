@@ -12,7 +12,7 @@ class Program
             Console.WriteLine("3. Listing Activity");
             Console.WriteLine("4. Quit");
 
-            Console.Write("Enter choice: ");
+            Console.Write("Enter your choice: ");
             int choice = int.Parse(Console.ReadLine());
 
             Activity activity = null;

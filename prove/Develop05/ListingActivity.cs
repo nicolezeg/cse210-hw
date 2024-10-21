@@ -7,14 +7,13 @@ public class ListingActivity : Activity
     private List<string> _prompts;
     public ListingActivity() : base("Listing", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.", 50)
     {
-        _count = 0;
         _prompts = new List<string>
         {
-           "Who are people that you appreciate?",
-           "What are personal strengths of yours?",
-           "Who are people that you have helped this week?",
-           "When have you felt the Holy Ghost this month?",
-           "Who are some of your personal heroes?" 
+           "Who are people that you appreciate? ",
+           "What are personal strengths of yours? ",
+           "Who are people that you have helped this week? ",
+           "When have you felt the Holy Ghost this month? ",
+           "Who are some of your personal heroes? " 
         };
 
     }
@@ -52,7 +51,8 @@ public class ListingActivity : Activity
             }
             userList.Add(input);
         }
-    
+        
+        _count = userList.Count;
         Console.WriteLine($"You listed {_count} items.");
         return userList;
     }

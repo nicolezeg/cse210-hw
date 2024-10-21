@@ -27,7 +27,7 @@ public abstract class Activity
     }
     public void DisplayEndingMessage()
     {
-        Console.WriteLine("You did a great job!");
+        Console.WriteLine("You did a good job!");
         Console.WriteLine($"You completed {_name} in {_duration} seconds.");
     }
     public void ShowSpinner(int seconds)
