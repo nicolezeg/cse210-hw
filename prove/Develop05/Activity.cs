@@ -4,7 +4,7 @@ public abstract class Activity
 {
     private string _name;
     private string _description;
-    private int _duration;
+    protected int _duration;
     
     public Activity(string name, string description, int duration)
     {
@@ -43,7 +43,7 @@ public abstract class Activity
         for (int i = seconds; i > 0; i--)
         {
             Console.Write($"{i}...");
-            System.Threading.Thread.Sleep(seconds * 1000);
+            System.Threading.Thread.Sleep(1000);
         }
         Console.WriteLine();
     }

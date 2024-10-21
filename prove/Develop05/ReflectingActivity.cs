@@ -35,11 +35,11 @@ public class ReflectionActivity : Activity
         DisplayStartingMessage();
         Console.WriteLine("Consider the following prompt: ");
         string prompt = GetRandomPrompt();
-        Console.WriteLine(prompt);
         DisplayPrompt(prompt);
         string question = GetRandomQuestion();
         DisplayQuestions(question);
         ShowSpinner(3);
+
         DisplayEndingMessage();
     }
 

@@ -10,8 +10,9 @@ public class BreathingActivity : Activity
     {
 
         DisplayStartingMessage();
+        int cycles = _duration / 6; // Calculate the number of cycles based on duration
 
-        for (int i = 0; i > 3; i++)
+        for (int i = 0; i < cycles; i++)
         {
             Console.WriteLine("Breathe in...");
             ShowCountdown(3);
