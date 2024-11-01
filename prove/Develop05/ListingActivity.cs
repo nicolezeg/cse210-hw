@@ -23,7 +23,7 @@ public class ListingActivity : Activity
         Random random = new Random();
         string prompt = GetRandomPrompt();
         Console.WriteLine(prompt);
-        ShowCountdown(5);
+        ShowCountdown(5);       
         List<string> userList = GetListFromUser();
         DisplayEndingMessage();
     }

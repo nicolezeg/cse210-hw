@@ -15,8 +15,10 @@ public class CheckListGoal : Goal
 
     public override void RecordEvent()
     {
+       
         _amountCompleted++;
     }
+            
 
     public override bool IsComplete()
     {

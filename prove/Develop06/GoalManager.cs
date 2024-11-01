@@ -102,7 +102,7 @@ public class GoalManager
         Console.Write("Enter goal name: ");
         string name = Console.ReadLine();
 
-        Goal goal = _goals.Find(g => g.GetName() == name);
+        Goal goal = _goals.Find(g => g.ShortName() == name);
         if (goal != null)
         {
             int _points = goal.RecordEvent();
